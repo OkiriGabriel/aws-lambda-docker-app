@@ -1,0 +1,9 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "bootstrap-sam-app"
+s3_bucket = "<s3_bucket>"
+region = "<region>"
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=<account>.dkr.ecr.<region>.amazonaws.com/hello-world"]
